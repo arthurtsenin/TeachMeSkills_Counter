@@ -1,0 +1,17 @@
+body {
+	counter-reset: section;
+}
+
+h2::before {
+	counter-increment: section;
+	content: "Секция " counter(section) ": ";
+	color: red;
+	font-size: 60px;
+}
+
+
+h3 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
